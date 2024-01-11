@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 let menu = document.getElementById("menu");
 let navele = document.getElementById("navitems");
 
@@ -12,4 +13,5 @@ menu.addEventListener('click', function() {
 
 
     isNavVisible = !isNavVisible;
+});
 });
