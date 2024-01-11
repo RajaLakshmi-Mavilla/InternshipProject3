@@ -1,17 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-let menu = document.getElementById("menu");
-let navele = document.getElementById("navitems");
+    let menu = document.getElementById("menu");
+    let navele = document.getElementById("navitems");
 
-let isNavVisible = false;
+    let isNavVisible = false;
 
-menu.addEventListener('click', function() {
-    if (isNavVisible) {
-        navele.style.display = 'none';
-    } else {
-        navele.style.display = 'flex';
-    }
+    menu.addEventListener('click', function () {
+        console.log("Menu clicked");
+        
+        if (isNavVisible) {
+           
+            navele.style.display = 'none';
+        } else {
+            
+            navele.style.display = 'flex';
+        }
 
-
-    isNavVisible = !isNavVisible;
+        isNavVisible = !isNavVisible;
+        console.log("isNavVisible:", isNavVisible);
+    });
 });
-});
+
